@@ -194,12 +194,25 @@ nav a:hover{color:var(--branco);border-bottom-color:var(--branco)}
 @media(max-width:520px){.passos{grid-template-columns:1fr}}
 
 /* ---------- valores ---------- */
-.valores{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-bottom:28px}
+.valores{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
 .valor{border:1px solid var(--linha);padding:34px 32px}
 .valor .rot{font-size:.74rem;letter-spacing:.2em;text-transform:uppercase;color:var(--tenue);display:block;margin-bottom:14px}
-.valor .grande{font-family:var(--serif);font-size:2.5rem;line-height:1.1;display:block;margin-bottom:10px}
+.valor .grande{font-family:var(--serif);font-size:2.4rem;line-height:1.1;display:block;margin-bottom:10px;white-space:nowrap}
 .valor p{color:var(--suave);font-size:.95rem}
-@media(max-width:720px){.valores{grid-template-columns:1fr}}
+@media(max-width:900px){.valores{grid-template-columns:1fr}}
+
+.aviso{
+  margin-top:24px;
+  border:1px solid var(--linha);
+  border-left:3px solid var(--branco);
+  background:rgba(0,0,0,.16);
+  padding:26px 30px;
+}
+.aviso strong{
+  display:block;margin-bottom:10px;font-weight:400;
+  font-size:.74rem;letter-spacing:.2em;text-transform:uppercase;
+}
+.aviso p{color:var(--suave);font-size:.95rem;max-width:82ch}
 .rodape-nota{color:var(--tenue);font-size:.92rem;max-width:66ch}
 
 /* ---------- faq ---------- */
@@ -438,7 +451,7 @@ footer{background:var(--petroleo-escuro);border-top:1px solid var(--linha);paddi
         <div class="passo">
           <span class="etapa">Etapa 4</span>
           <h3>Produção e envio</h3>
-          <p>A etiqueta é tecida, cortada no acabamento escolhido e enviada. A produção leva de 10 a 30 dias, contados a partir da aprovação.</p>
+          <p>A etiqueta é tecida, cortada no acabamento escolhido e enviada. A produção leva de 10 a 30 dias, a depender da nossa demanda, contados a partir do pagamento de 50% do pedido.</p>
         </div>
       </div>
     </div>
@@ -448,8 +461,8 @@ footer{background:var(--petroleo-escuro);border-top:1px solid var(--linha);paddi
   <section class="faixa">
     <div class="wrap">
       <div class="cab">
-        <p class="olho">Quantidade e valores</p>
-        <h2>Como funciona o mínimo de produção</h2>
+        <p class="olho">Quantidade mínima e forma de pagamento</p>
+        <h2>Como funciona o mínimo e o pagamento</h2>
       </div>
       <div class="valores">
         <div class="valor">
@@ -462,8 +475,16 @@ footer{background:var(--petroleo-escuro);border-top:1px solid var(--linha);paddi
           <span class="grande">R$ 500,00</span>
           <p>Valor mínimo de pedido. Aqui a quantidade produzida varia conforme o tamanho do patch, então ela é fechada caso a caso.</p>
         </div>
+        <div class="valor">
+          <span class="rot">Forma de pagamento</span>
+          <span class="grande">50% + 50%</span>
+          <p>Metade no pedido e metade antes do envio. Aceitamos cartão de crédito, Pix e boleto. Acima de R$ 600,00, parcelamos em até 6x no cartão de crédito.</p>
+        </div>
       </div>
-      <p class="rodape-nota">O preço por etiqueta muda conforme o tamanho, o número de cores e o acabamento escolhido. Por isso todo orçamento é feito na conversa, com base no seu projeto.</p>
+      <div class="aviso">
+        <strong>Atenção</strong>
+        <p>Pode haver uma variação de quantidade de 20% para mais ou para menos, e isso interfere diretamente no valor final do pedido. É de sua responsabilidade assumir até os 20% excedentes das etiquetas produzidas.</p>
+      </div>
     </div>
   </section>
 
@@ -488,7 +509,7 @@ footer{background:var(--petroleo-escuro);border-top:1px solid var(--linha);paddi
 
         <details>
           <summary>Quantas cores posso usar na etiqueta?</summary>
-          <p>Dá para trabalhar fundo, logo e detalhes em cores diferentes. O limite prático é a sua arte: quanto mais cor e mais detalhe fino em pouco espaço, maior a etiqueta precisa ser para não perder nitidez. Na conversa a gente te mostra até onde dá.</p>
+          <p>São no máximo 8 cores por etiqueta, contando fundo, logo e detalhes. Dentro desse limite, o que pesa é a sua arte: quanto mais cor e mais detalhe fino em pouco espaço, maior a etiqueta precisa ser para não perder nitidez. Na conversa a gente te mostra até onde dá.</p>
         </details>
 
         <details>
@@ -503,7 +524,7 @@ footer{background:var(--petroleo-escuro);border-top:1px solid var(--linha);paddi
 
         <details>
           <summary>Qual o prazo de produção?</summary>
-          <p>De 10 a 30 dias, contados a partir da aprovação do layout. O que faz o prazo variar é a quantidade e o acabamento escolhido. Confirmamos a data com você no fechamento do pedido.</p>
+          <p>De 10 a 30 dias, contados a partir do pagamento de 50% do pedido. O prazo depende da nossa demanda. Não deixe para a última hora!</p>
         </details>
 
       </div>
