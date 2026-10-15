@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>JG Etiquetas | Etiquetas bordadas personalizadas para confecção</title>
 <meta name="description" content="Etiquetas bordadas personalizadas para confecção: palito, composição, clip e patch em corte a laser. Você envia a logo, a gente monta o desenho. Orçamento pelo WhatsApp.">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self' data: https://www.facebook.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'sha256-Kqeip45kPdvyWpsC6C/rlp6S91djLHlKppbsKWtTfHg=' https://connect.facebook.net; object-src 'none'; frame-src 'none'; connect-src https://www.facebook.com https://connect.facebook.net; form-action 'none'; base-uri 'none'; upgrade-insecure-requests">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self' data: https://www.facebook.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'sha256-20Wef1YHJC0CuqI3osPltD3k7NjviURY8BfuCEwjX3M=' https://connect.facebook.net; object-src 'none'; frame-src 'none'; connect-src https://www.facebook.com https://connect.facebook.net; form-action 'none'; base-uri 'none'; upgrade-insecure-requests">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -263,24 +263,36 @@ footer{background:var(--petroleo-escuro);border-top:1px solid var(--linha);paddi
 .flutua:hover{transform:scale(1.06)}
 .flutua svg{width:28px;height:28px}
 @media(max-width:560px){.flutua{right:16px;bottom:16px}}
+
+/* ---------- aviso de cookies ---------- */
+[hidden]{display:none !important}
+.aviso-cookies{
+  position:fixed;left:0;right:0;bottom:0;z-index:80;
+  background:var(--petroleo-escuro);border-top:1px solid var(--linha);
+  padding:18px 0 calc(18px + env(safe-area-inset-bottom));
+}
+.aviso-cookies .wrap{display:flex;flex-wrap:wrap;gap:16px 28px;align-items:center;justify-content:space-between}
+.aviso-cookies p{flex:1 1 420px;font-size:.9rem;line-height:1.55;color:var(--suave);margin:0}
+.aviso-cookies p a{color:var(--branco);text-decoration:none;border-bottom:1px solid var(--linha)}
+.aviso-cookies p a:hover{border-bottom-color:var(--branco)}
+.aviso-cookies .acoes{display:flex;gap:12px;flex:0 0 auto}
+.aviso-cookies button{
+  font-family:var(--sans);font-size:.92rem;letter-spacing:.03em;cursor:pointer;
+  padding:11px 26px;border:1px solid var(--branco);min-width:120px;
+}
+.aviso-cookies .aceitar{background:var(--branco);color:var(--petroleo)}
+.aviso-cookies .recusar{background:transparent;color:var(--branco)}
+.aviso-cookies button:hover{opacity:.88}
+.link-cookies{
+  font:inherit;color:inherit;background:none;border:0;padding:0;cursor:pointer;
+  border-bottom:1px solid var(--linha);
+}
+.link-cookies:hover{border-bottom-color:var(--branco)}
+@media(max-width:560px){
+  .aviso-cookies .acoes{width:100%}
+  .aviso-cookies button{flex:1 1 0}
+}
 </style>
-<!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1835545540791652');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1835545540791652&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
 </head>
 <body>
 
@@ -574,6 +586,8 @@ src="https://www.facebook.com/tr?id=1835545540791652&ev=PageView&noscript=1"
       <a href="politicas.html">Política de Privacidade</a>
       <span aria-hidden="true">·</span>
       <a href="politicas.html#termos">Termos de Uso</a>
+      <span aria-hidden="true">·</span>
+      <button type="button" class="link-cookies" data-abrir-cookies>Preferências de cookies</button>
     </p>
     <p class="rodape-cnpj">JG Etiquetas · CNPJ 41.036.612/0001-11</p>
   </div>
@@ -581,5 +595,60 @@ src="https://www.facebook.com/tr?id=1835545540791652&ev=PageView&noscript=1"
 
 <a class="flutua" href="https://wa.me/5512991342893?text=Ol%C3%A1%21%20Vim%20pelo%20site%20e%20quero%20um%20or%C3%A7amento%20de%20etiquetas%20bordadas." target="_blank" rel="noopener noreferrer" aria-label="Falar no WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.85 9.85 0 0 0 12.04 2Zm0 18.15h-.01a8.23 8.23 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.22 8.22 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.83 2.42a8.19 8.19 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.79.97-.14.16-.29.18-.54.06-.25-.13-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.38-1.72-.15-.25-.02-.38.11-.5.11-.11.25-.29.37-.44.13-.15.17-.25.25-.42.08-.16.04-.31-.02-.43-.06-.12-.56-1.35-.77-1.85-.2-.48-.4-.42-.55-.43l-.47-.01c-.16 0-.43.06-.65.31-.22.25-.85.83-.85 2.03s.87 2.35.99 2.51c.12.16 1.71 2.61 4.14 3.66.58.25 1.03.4 1.38.51.58.19 1.11.16 1.53.1.47-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.1-.22-.16-.47-.28Z"/></svg></a>
 
+<div class="aviso-cookies" id="aviso-cookies" role="region" aria-label="Aviso de cookies" hidden>
+  <div class="wrap">
+    <p>Usamos o Pixel da Meta para medir o resultado dos nossos anúncios no Instagram e no Facebook. Ele só é ativado se você aceitar, e você pode mudar de ideia a qualquer momento no rodapé. Saiba mais na <a href="politicas.html#privacidade">Política de Privacidade</a>.</p>
+    <div class="acoes">
+      <button type="button" class="recusar" id="cookies-recusar">Recusar</button>
+      <button type="button" class="aceitar" id="cookies-aceitar">Aceitar</button>
+    </div>
+  </div>
+</div>
+<script>
+(function(){
+var CHAVE='jg_consentimento_meta', ID='1835545540791652';
+var banner=document.getElementById('aviso-cookies');
+function ler(){try{return localStorage.getItem(CHAVE)}catch(e){return null}}
+function gravar(v){try{localStorage.setItem(CHAVE,v)}catch(e){}}
+function apagarCookies(){
+  var h=location.hostname, raiz=h.split('.').slice(-3).join('.');
+  ['_fbp','_fbc'].forEach(function(n){
+    [h,'.'+h,'.'+raiz].forEach(function(d){document.cookie=n+'=; Max-Age=0; path=/; domain='+d});
+    document.cookie=n+'=; Max-Age=0; path=/';
+  });
+}
+function carregarPixel(){
+  if(window.fbq)return;
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init',ID);
+  fbq('track','PageView');
+}
+function mostrar(){banner.hidden=false}
+function esconder(){banner.hidden=true}
+var estado=ler();
+if(estado==='granted'){carregarPixel()}else if(estado!=='denied'){mostrar()}
+document.getElementById('cookies-aceitar').addEventListener('click',function(){
+  gravar('granted');esconder();carregarPixel();
+});
+document.getElementById('cookies-recusar').addEventListener('click',function(){
+  var tinhaPixel=!!window.fbq;
+  gravar('denied');esconder();apagarCookies();
+  if(tinhaPixel){location.reload()}
+});
+var abrir=document.querySelectorAll('[data-abrir-cookies]');
+for(var i=0;i<abrir.length;i++){abrir[i].addEventListener('click',mostrar)}
+document.addEventListener('click',function(e){
+  var a=e.target&&e.target.closest?e.target.closest('a[href^="https://wa.me/"]'):null;
+  if(a&&window.fbq){fbq('track','Contact')}
+});
+})();
+</script>
 </body>
 </html>
